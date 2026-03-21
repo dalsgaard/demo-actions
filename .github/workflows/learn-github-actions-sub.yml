@@ -1,0 +1,10 @@
+name: learn-github-actions-sub
+run-name: ${{ github.actor }} is learning GitHub Actions Sub
+on:
+  workflow_run:
+    workflows: [learn-github-actions]
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Sub Workflow"
