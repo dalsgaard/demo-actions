@@ -15,6 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: gh api users/dalsgaard
+    env:
+      GH_TOKEN: ${{ github.token }}
   # print_context:
   #   runs-on: ubuntu-latest
   #   steps:
