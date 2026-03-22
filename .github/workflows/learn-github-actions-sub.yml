@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Sub Workflow"
+  user:
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh api users/dalsgaard
   # print_context:
   #   runs-on: ubuntu-latest
   #   steps:
